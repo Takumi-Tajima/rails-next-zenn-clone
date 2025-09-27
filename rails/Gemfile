@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+gem "rails", "~> 8.0.3"
+
+gem "mysql2"
+gem "puma"
+gem "bootsnap", require: false

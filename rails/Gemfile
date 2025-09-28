@@ -5,3 +5,10 @@ gem "rails", "~> 8.0.3"
 gem "mysql2"
 gem "puma"
 gem "bootsnap", require: false
+
+group :development, :test do
+  gem "pry-byebug"
+  gem "pry-doc"
+  gem "pry-rails"
+  gem "rspec-rails"
+end

@@ -1,14 +1,15 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "rails", "~> 8.0.3"
+gem 'rails', '~> 8.0.3'
 
-gem "mysql2"
-gem "puma"
-gem "bootsnap", require: false
+gem 'bootsnap', require: false
+gem 'mysql2'
+gem 'puma'
 
 group :development, :test do
-  gem "pry-byebug"
-  gem "pry-doc"
-  gem "pry-rails"
-  gem "rspec-rails"
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'sgcop', github: 'SonicGarden/sgcop', branch: 'main'
 end

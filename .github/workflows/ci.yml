@@ -30,7 +30,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 'rails/.ruby-version'
+          ruby-version: '3.3.9'
           bundler-cache: true
 
       - name: Cache node modules
@@ -68,7 +68,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 'rails/.ruby-version'
+          ruby-version: '3.3.9'
           bundler-cache: true
 
       - name: Bundler and gem install

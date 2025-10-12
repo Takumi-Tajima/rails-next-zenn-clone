@@ -10,6 +10,14 @@
     "format": "next lint --fix --dir src"
   },
   "dependencies": {
+    "@emotion/babel-plugin": "^11.13.5",
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.4",
+    "@mui/lab": "^7.0.1-beta.18",
+    "@mui/material": "^7.3.4",
     "next": "15.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0"

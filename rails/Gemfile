@@ -5,6 +5,7 @@ gem 'rails', '~> 8.0.3'
 gem 'bootsnap', require: false
 gem 'mysql2'
 gem 'puma'
+gem 'rack-cors'
 
 group :development, :test do
   gem 'pry-byebug'

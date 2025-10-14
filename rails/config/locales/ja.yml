@@ -1,5 +1,10 @@
 ja:
   activerecord:
+    attributes:
+      article:
+        title: タイトル
+        content: 内容
+        status: ステータス
     errors:
       messages:
         record_invalid: '%{errors}'

@@ -68,4 +68,7 @@ Rails.application.configure do
   config.action_mailer.default_options = { from: "no-replay@example.com" }
   config.action_mailer.default_url_options = { host: "localhost:3000" }
   config.action_mailer.delivery_method = :letter_opener_web
+
+  # Allow www.example.com for RSpec request specs
+  config.hosts << "www.example.com"
 end

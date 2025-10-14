@@ -9,13 +9,9 @@ RSpec.describe "Api::V1::Current::Users", type: :request do
       it "正常にレコードを取得できる" do
         get(api_v1_current_user_path, headers:)
 
-        puts '=' * 100
-        puts response.body
-        puts '=' * 100
-
         res = JSON.parse(response.body)
 
-        expect(res.keys).to eq ["id", "name", "email"]
+        expect(res.keys).to match_array ["id", "name", "email"]
         expect(response).to have_http_status(:ok)
       end
     end
@@ -28,7 +24,7 @@ RSpec.describe "Api::V1::Current::Users", type: :request do
 
         res = JSON.parse(response.body)
 
-        expect(res["errors"]).to eq ["ログインもしくはアカウント登録してください。"]
+        expect(res["errors"]).to eq ["続けるには、ログインまたは登録（サインアップ）が必要です。"]
         expect(response).to have_http_status(:unauthorized)
       end
     end

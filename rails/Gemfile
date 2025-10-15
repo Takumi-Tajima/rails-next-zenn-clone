@@ -17,6 +17,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-rails'
   gem 'rspec-rails'
+  gem 'bullet'
   gem 'sgcop', github: 'SonicGarden/sgcop', branch: 'main'
 end
 

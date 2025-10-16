@@ -127,6 +127,8 @@ GEM
       rails (>= 4.2.0, < 8.1)
     diff-lcs (1.6.2)
     drb (2.2.3)
+    enum_help (0.0.20)
+      activesupport (>= 3.0.0)
     erb (5.0.2)
     erubi (1.13.1)
     factory_bot (6.5.5)
@@ -357,6 +359,7 @@ DEPENDENCIES
   bullet
   devise
   devise_token_auth
+  enum_help
   factory_bot_rails
   faker
   letter_opener_web

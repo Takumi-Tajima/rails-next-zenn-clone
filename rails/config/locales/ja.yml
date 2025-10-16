@@ -5,6 +5,12 @@ ja:
         title: タイトル
         content: 内容
         status: ステータス
+  enums:
+    article:
+      status:
+        unsaved: 未保存
+        draft: 下書き
+        published: 公開中
     errors:
       messages:
         record_invalid: '%{errors}'

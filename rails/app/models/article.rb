@@ -1,6 +1,9 @@
 class Article < ApplicationRecord
   belongs_to :user
 
+  attribute :title, :string, default: 'タイトルを入力してください'
+  attribute :content, :text, default: '内容を入力してください'
+
   enum :status, { unsaved: 1, draft: 2, published: 3 }
 
   scope :default_order, -> { order(created_at: :desc) }
